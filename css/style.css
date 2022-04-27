@@ -1,0 +1,210 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+header ul li{
+padding-left: 15px;
+}
+header button{
+    border: none;
+    background: none;
+}
+.hero{
+    background-image: url("/purplehair.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    border-bottom: 5px solid rgb(178,168,169);
+  border-right: 5px solid rgb(178,168,169);
+  border-radius:100% 0% 100% 100% / 0% 0% 34% 0%  ;
+  /* transform: skewY(7deg); */
+  height: 670px;
+  width: 100%;
+  margin: 0;
+   color: white;
+   position: relative;
+   /* border-bottom-right-radius: 10% 30%; */
+   /* clip-path: ellipse(100% 100% at 100% 100%); */
+}
+.absolute-div{
+    position: absolute;
+    left: 9rem;
+    top: 9rem;
+}
+.absolute-div h1{
+    font-size: 7rem;
+    font-weight: 100;
+    padding-bottom: 1rem;
+    /* border: 2px solid black; */
+}
+.hero-btn{
+    background-color: black;
+    width: 30%;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+.off-div{
+    background-color: black;
+    width: 28%;
+    /* text-align: center; */
+    padding: 1.5rem 1rem;
+    height: 12rem;
+}
+.off-div h2{
+    font-size: .8rem;
+    padding: 1rem 0;
+}
+.off-div p{
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+.off-div button{
+    margin: 1rem 0 2rem;
+    padding: 1rem;
+    width: 80%;
+    height: 2rem;
+    text-align: center;
+    }
+    .middle-sec{
+        display: flex;
+        margin: 4rem auto 3rem;
+        padding: 3rem 7rem ;
+
+    }
+    .middle-sec section{
+        flex-basis: 30%;
+        text-align: center;
+        padding-left: 2rem;
+    }
+
+    .third{
+        display: flex;
+        background-color: rgb(241, 238, 238);
+        padding: 2rem 10rem;
+        justify-content: space-between;
+    }
+    .third-text{
+        flex-basis: 50%;
+        padding-left: 3rem;
+        /* border: 2px solid red; */
+        align-content: flex-end;
+    }
+    .third-h,.third-p{
+        width: 60%;
+        padding-bottom: 1.5rem;
+    }
+   .third-b{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        width: 40%;
+        height: 3rem;
+    }
+    .image-sec{
+        flex-basis: 50%;
+        /* border: 2px solid rgb(27, 26, 26); */
+    }
+.employee{
+    display: flex;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.each-employee{
+padding-left: 2rem;
+}
+.each-employee img{
+    width: 20rem;
+}
+.employee-desc{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 15rem;
+    margin: -1rem auto 0;
+    z-index: 2;
+    position: relative;
+    right: .5rem;
+}
+.blonde{
+    position: relative;
+}
+.text-div{
+    position: absolute;
+    top: 10rem;
+    left: 14rem;
+    font-size: larger;
+}
+.text-div h2{
+    width: 23rem;
+    padding: 1rem 0 2rem;
+}
+.text-div button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+}
+.img-div img{
+    display: block;
+    margin: 0 auto;
+    height: 30rem;
+    width: 75%;
+}
+.down-h{
+    text-align: center;
+    padding: 3rem 0;
+}
+.grid{
+    width: fit-content;
+    /* height: 10rem; */
+    margin: 0 auto;
+    display: grid;
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img1 img2 img3"
+                "img4 img2 img6"
+                "img4 img5 img6";
+}
+.grid img:nth-child(1){
+    grid-area: img1
+}
+.grid img:nth-child(2){
+    grid-area: img2
+    
+}
+.grid img:nth-child(3){
+    grid-area: img3
+}
+.grid img:nth-child(4){
+    grid-area: img4
+}
+.grid img:nth-child(5){
+    grid-area: img5
+}
+.grid img:nth-child(6){
+    grid-area: img6
+}
+.grid img:nth-child(5){
+    width: 23rem;
+}
+.grid img{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
